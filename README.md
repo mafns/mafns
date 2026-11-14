@@ -39,7 +39,7 @@ Data is where I spend most of my time, but I'm not precious about labels. If the
 ### 📊 GitHub stats
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=mafns&theme=github-dark-blue&hide_border=true&background=0d1117" width="100%"/>
+    <img src="https://streak-stats.demolab.com?user=mafns&theme=github-dark-blue&hide_border=true&background=0d1117&v=2" width="100%"/>
 </p>
 
 <!-- 3D contribution graph (made by the workflow) -->
