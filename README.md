@@ -51,10 +51,10 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 
 ---
 
-### 🐍 Contribution snake
+### 👻 Contribution Pac-Man
 
 <p align="center">
-  <img src="snake/github-snake-dark.svg" alt="contribution snake" width="100%"/>
+  <img src="games/pacman-contribution-graph-dark.svg" alt="Pac-Man contribution graph" width="100%"/>
 </p>
 
 ---
