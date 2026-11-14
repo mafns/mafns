@@ -1,4 +1,4 @@
-<link!-- Banner -->
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=200&section=header&text=Affaan&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%"/>
 
 <!-- Typing line -->
