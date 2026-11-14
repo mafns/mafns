@@ -10,7 +10,6 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/maffaans/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <img src="https://komarev.com/ghpvc/?username=mafns&style=for-the-badge&color=1f6feb&label=PROFILE+VIEWS"/>
 </p>
 
 ---
@@ -26,20 +25,15 @@ Data is where I spend most of my time, but I'm not precious about labels. If the
 ### 🛠️ Tools I use
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,html,css,js,ts,git,github,vscode&theme=dark" />
-</p>
-
----
-
-### 🚀 Featured projects
-
-<p align="center">
-  <a href="https://github.com/mafns/AI-Stock-Sentiment-Analyzer"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mafns&repo=AI-Stock-Sentiment-Analyzer&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff"/></a>
-  <a href="https://github.com/mafns/Airline-Demand-Forecasting-Revenue-Optimization-Simulator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mafns&repo=Airline-Demand-Forecasting-Revenue-Optimization-Simulator&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff"/></a>
-</p>
-<p align="center">
-  <a href="https://github.com/mafns/Shein-Product-Funnel-Analysis-"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mafns&repo=Shein-Product-Funnel-Analysis-&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff"/></a>
-  <a href="https://github.com/mafns/Quickhire"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mafns&repo=Quickhire&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff"/></a>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
 </p>
 
 ---
@@ -50,19 +44,9 @@ Data is where I spend most of my time, but I'm not precious about labels. If the
   <img src="https://streak-stats.demolab.com?user=mafns&theme=github-dark-blue&hide_border=true&background=0d1117" width="100%"/>
 </p>
 
-<table align="center">
-<tr>
-<td><img src="https://github-readme-stats.vercel.app/api?username=mafns&show_icons=true&theme=github_dark&hide_border=true&count_private=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff" height="170"/></td>
-<td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mafns&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff" height="170"/></td>
-</tr>
-</table>
-
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=mafns&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&row=1"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mafns&bg_color=0d1117&color=58a6ff&line=1f6feb&point=ffffff&area=true&area_color=1f6feb&hide_border=true" width="100%"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mafns&theme=github_dark" height="170"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mafns&theme=github_dark" height="170"/>
 </p>
 
 <!-- 3D contribution graph (made by the workflow) -->
