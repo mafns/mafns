@@ -52,10 +52,7 @@ Data is where I spend most of my time, but I'm not precious about labels. If the
 ### 🐍 Contribution snake
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="snake/github-snake-dark.svg"/>
-    <img src="snake/github-snake.svg" alt="contribution snake"/>
-  </picture>
+  <img src="snake/github-snake-dark.svg" alt="contribution snake" width="100%"/>
 </p>
 
 ---
