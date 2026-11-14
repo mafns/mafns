@@ -14,9 +14,11 @@
 
 ### 👋 About me
 
-I'm Affaan, and I'm curious by default. If something looks complicated, I usually want to take it apart and see how it works.
+I've always been the person who asks "but why does it do that?" one time too many. For a long time that curiosity didn't really have anywhere to go.
 
-Data is where I spend most of my time, but I'm not precious about labels. If there's an interesting problem, I'm in.
+Data gave it somewhere. Behind almost every question I care about there's a dataset that already knows part of the answer. The fun is in getting it to talk: cleaning it, poking at it, and modelling it until the pattern finally shows up.
+
+I'm not tied to one tool or one corner of the field. I go wherever the question takes me, whether that's a quick chart, a model, or rebuilding the pipeline the data came from.
 
 ---
 
