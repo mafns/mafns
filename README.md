@@ -59,6 +59,13 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 
 ---
 
+### tic-tac-toe 
+
+<!-- TTT_START -->
+<p align="center"><a href="https://github.com/mafns/mafns/issues/new?title=ttt%7Cnew&body=Click+submit">▶️ Start the game</a></p>
+<!-- TTT_END -->
+
+<p align="center"><sub>Click a square → submit the issue → the bot answers in ~20s</sub></p>
 
 <!-- Footer wave -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:0d1117&height=110&section=footer" width="100%"/>
