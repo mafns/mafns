@@ -1,4 +1,4 @@
-<!-- Banner -->
+<link!-- Banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=200&section=header&text=Affaan&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%"/>
 
 <!-- Typing line -->
@@ -6,9 +6,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=620&lines=Hello+There;Taking+complicated+things+apart;Mostly+data%2C+not+precious+about+labels;If+there's+an+interesting+problem%2C+I'm+in" />
 </p>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/maffaans/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-</p>
+
 
 ---
 
