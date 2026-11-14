@@ -1,5 +1,3 @@
-## Hi there 👋
-
 <!-- Banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=200&section=header&text=Affaan&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%"/>
 
@@ -42,10 +40,6 @@ Data is where I spend most of my time, but I'm not precious about labels. If the
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=mafns&theme=github-dark-blue&hide_border=true&background=0d1117" width="100%"/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mafns&theme=github_dark" height="170"/>
 </p>
 
 <!-- 3D contribution graph (made by the workflow) -->
