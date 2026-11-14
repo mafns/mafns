@@ -3,7 +3,7 @@
 
 <!-- Typing line -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=620&lines=Curious+by+default;Taking+complicated+things+apart;Mostly+data%2C+not+precious+about+labels;If+there's+an+interesting+problem%2C+I'm+in" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=620&lines=Hello+There;Taking+complicated+things+apart;Mostly+data%2C+not+precious+about+labels;If+there's+an+interesting+problem%2C+I'm+in" />
 </p>
 
 <p align="center">
