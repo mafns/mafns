@@ -58,6 +58,8 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 </p>
 
 ---
-
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=4000&pause=1500&color=58A6FF&center=true&vCenter=true&width=750&height=60&lines=%22Why+so+serious%3F%22+-+The+Dark+Knight;%22I'm+gonna+make+him+an+offer+he+can't+refuse.%22+-+The+Godfather;%22Do.+Or+do+not.+There+is+no+try.%22+-+Star+Wars;%22Everything+not+saved+will+be+lost.%22+-+Nintendo;%22Life+moves+pretty+fast.%22+-+Ferris+Bueller;%22I+am+inevitable.%22+-+Avengers%3A+Endgame;%22Fasten+your+seatbelts.+It's+going+to+be+a+bumpy+night.%22+-+All+About+Eve" />
+</p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:0d1117&height=110&section=footer" width="100%"/>
