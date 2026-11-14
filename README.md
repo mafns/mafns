@@ -45,7 +45,6 @@ Data is where I spend most of my time, but I'm not precious about labels. If the
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mafns&theme=github_dark" height="170"/>
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mafns&theme=github_dark" height="170"/>
 </p>
 
