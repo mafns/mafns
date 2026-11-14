@@ -58,8 +58,4 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 </p>
 
 ---
-<p align="center">
-  <img src="games/pacman-contribution-graph-dark.svg" alt="Pac-Man contribution graph" width="100%"/>
-</p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:0d1117&height=70&section=footer" width="100%"/>
