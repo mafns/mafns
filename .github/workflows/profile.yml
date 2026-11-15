@@ -34,12 +34,6 @@ jobs:
           OUT_FILE: assets/activity.svg
         run: python scripts/activity.py
 
-      - name: Featured projects
-        env:
-          GH_USER: ${{ github.repository_owner }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/projects.py
-
       - name: Pac-Man contribution graph
         uses: abozanona/pacman-contribution-graph@v5.3.2
         with:
