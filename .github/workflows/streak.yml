@@ -23,7 +23,7 @@ jobs:
       - name: Generate streak SVG
         env:
           GH_USER: ${{ github.repository_owner }}
-          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OUT_FILE: assets/streak.svg
         run: python scripts/streak.py
 
