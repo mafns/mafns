@@ -1,8 +1,8 @@
 name: Pac-Man and 3D graph
 on:
   schedule:
-    - cron: "23 */12 * * *"   # twice a day
-  workflow_dispatch:           # run it by hand from the Actions tab
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
