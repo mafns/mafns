@@ -76,7 +76,15 @@ def rng(a, b, n):
     return fmt(a) if a == b else f"{fmt(a)} - {fmt(b)}"
 
 
-total_range = f"{first_contrib.strftime('%b %-d, %Y')} - Present"
+# Use GitHub's own "last year" number so it matches the profile page exactly
+last = gql(
+    "query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{"
+    "totalContributions weeks{contributionDays{date}}}}}}",
+    {"u": USER},
+)["user"]["contributionsCollection"]["contributionCalendar"]
+class="lbl">Contributions (Last Year)</text>
+window_start = dt.date.fromisoformat(last["weeks"][0]["contributionDays"][0]["date"])
+total_range = f"{window_start.strftime('%b %-d, %Y')} - Present"
 cur_range = rng(cur_start, cur_end, cur_len)
 long_range = rng(longest[1], longest[2], longest[0])
 
