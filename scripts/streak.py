@@ -41,8 +41,6 @@ for year in range(start_year, today.year + 1):
                 days[date] = d["contributionCount"]
 
 dates = sorted(days)
-total = sum(days.values())
-first_contrib = next((d for d in dates if days[d] > 0), dates[0])
 
 longest = (0, None, None)
 run_start, run_len = None, 0
@@ -65,6 +63,15 @@ while days.get(d, 0) > 0:
     d -= dt.timedelta(days=1)
 cur_start = d + dt.timedelta(days=1)
 
+# GitHub's own "last year" number, so it matches the profile page exactly
+last = gql(
+    "query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{"
+    "totalContributions weeks{contributionDays{date}}}}}}",
+    {"u": USER},
+)["user"]["contributionsCollection"]["contributionCalendar"]
+total = last["totalContributions"]
+window_start = dt.date.fromisoformat(last["weeks"][0]["contributionDays"][0]["date"])
+
 
 def fmt(x):
     return x.strftime("%b %-d") if x.year == today.year else x.strftime("%b %-d, %Y")
@@ -76,14 +83,6 @@ def rng(a, b, n):
     return fmt(a) if a == b else f"{fmt(a)} - {fmt(b)}"
 
 
-# Use GitHub's own "last year" number so it matches the profile page exactly
-last = gql(
-    "query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{"
-    "totalContributions weeks{contributionDays{date}}}}}}",
-    {"u": USER},
-)["user"]["contributionsCollection"]["contributionCalendar"]
-class="lbl">Contributions (Last Year)</text>
-window_start = dt.date.fromisoformat(last["weeks"][0]["contributionDays"][0]["date"])
 total_range = f"{window_start.strftime('%b %-d, %Y')} - Present"
 cur_range = rng(cur_start, cur_end, cur_len)
 long_range = rng(longest[1], longest[2], longest[0])
@@ -101,7 +100,7 @@ svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewB
 <line x1="165" y1="28" x2="165" y2="170" stroke="{LINE}"/>
 <line x1="330" y1="28" x2="330" y2="170" stroke="{LINE}"/>
 <text x="82.5" y="79" text-anchor="middle" class="num">{total}</text>
-<text x="82.5" y="118" text-anchor="middle" class="lbl">Total Contributions</text>
+<text x="82.5" y="118" text-anchor="middle" class="lbl">Contributions (Last Year)</text>
 <text x="82.5" y="145" text-anchor="middle" class="sub">{total_range}</text>
 <circle cx="247.5" cy="71" r="40" fill="none" stroke="#1f6feb" stroke-width="5"/>
 <text x="247.5" y="81" text-anchor="middle" class="big">{cur_len}</text>
