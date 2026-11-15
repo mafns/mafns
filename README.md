@@ -25,6 +25,13 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 
 ---
 
+### 📌 Featured projects
+
+<!-- PROJECTS:START -->
+<!-- PROJECTS:END -->
+
+---
+
 ### 📊 GitHub activity
 
 <p align="center">
