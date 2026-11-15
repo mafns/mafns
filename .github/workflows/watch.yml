@@ -1,0 +1,37 @@
+name: Watch contributions
+
+# One long-running job that notices new contributions within ~30s and
+# triggers "Update profile stats". It restarts itself before the 6h job limit;
+# the hourly schedule only revives it if that chain ever breaks.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+  push:
+    branches: [main]
+    paths: [".github/workflows/watch.yml", "scripts/watch.py"]
+
+permissions:
+  actions: write     # dispatch the build workflow and the next watcher
+  contents: read
+
+concurrency:
+  group: contribution-watcher
+  cancel-in-progress: false   # a running watcher keeps going; at most one waits behind it
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Watch
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          POLL_SECONDS: "30"
+          RUN_MINUTES: "340"
+        run: python scripts/watch.py
