@@ -1,12 +1,9 @@
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=200&section=header&text=Affaan&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%"/>
 
 <!-- Typing line -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=620&lines=Hello+There;Taking+complicated+things+apart;Mostly+data%2C+not+precious+about+labels;If+there's+an+interesting+problem%2C+I'm+in" />
 </p>
-
-
 
 ---
 
@@ -38,8 +35,9 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 
 ### 📊 GitHub stats
 
+<!-- Streak card (made by the streak workflow, refreshed every 5 min) -->
 <p align="center">
-    <img src="https://streak-stats.demolab.com?user=mafns&theme=github-dark-blue&hide_border=true&background=0d1117&v=2" width="100%"/>
+  <img src="assets/streak.svg" width="100%"/>
 </p>
 
 <!-- 3D contribution graph (made by the workflow) -->
@@ -49,11 +47,8 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 
 ---
 
-### 👻 Contribution Pac-Man
-
 <p align="center">
   <img src="games/pacman-contribution-graph-dark.svg" alt="Pac-Man contribution graph" width="100%"/>
 </p>
 
 ---
-
