@@ -33,22 +33,16 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 
 ---
 
-### 📊 GitHub stats
+### 📊 GitHub activity
 
-<!-- Streak card (made by the streak workflow, refreshed every 5 min) -->
 <p align="center">
-  <img src="assets/streak.svg" width="100%"/>
-</p>
-
-<!-- 3D contribution graph (made by the workflow) -->
-<p align="center">
-  <img src="profile-3d-contrib/profile-night-view.svg" width="100%"/>
+  <img src="assets/activity.svg?v=0" alt="GitHub activity" width="100%"/>
 </p>
 
 ---
 
 <p align="center">
-  <img src="games/pacman-contribution-graph-dark.svg" alt="Pac-Man contribution graph" width="100%"/>
+  <img src="games/pacman-contribution-graph-dark.svg?v=0" alt="Pac-Man contribution graph" width="100%"/>
 </p>
 
 ---
