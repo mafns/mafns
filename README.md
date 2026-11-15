@@ -20,7 +20,7 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 ### 🛠️ Tools I use
 
 <p align="center">
-  <img src="assets/tools.svg?v=1" alt="Tools I use" width="100%"/>
+  <img src="assets/tools.svg?v=2" alt="Tools I use" width="100%"/>
 </p>
 
 ---

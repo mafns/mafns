@@ -34,9 +34,7 @@ GLYPHS = {
 GROUPS = [
     ("LANGUAGES & DATABASES", [
         ("Python", "Python", "#4b8bbe"),
-        ("SQL", "db", "#58a6ff"),
         ("PostgreSQL", "PostgreSQL", "#6b8ff0"),
-        ("MySQL", "MySQL", "#5d9bd1"),
     ]),
     ("DATA & MACHINE LEARNING", [
         ("Pandas", "pandas", "#e70488"),
