@@ -157,8 +157,9 @@ a(f'<rect x="1" y="1" width="{W-2}" height="2" fill="url(#glow)"/>')
 
 # Header
 a(f'<text x="{PAD}" y="44" fill="{MUTED}" font-size="12" font-weight="700" letter-spacing="2">GITHUB ACTIVITY</text>')
-a(f'<circle class="live" cx="{W-PAD-118}" cy="40" r="4" fill="#3fb950"/>')
-a(f'<text x="{W-PAD}" y="44" fill="{MUTED}" font-size="11" text-anchor="end">updated {today.strftime("%-d %b %Y")}</text>')
+updated = f'updated {dt.datetime.now(dt.timezone.utc).strftime("%-d %b %Y, %H:%M")} UTC'
+a(f'<circle class="live" cx="{W-PAD-len(updated)*5.6-12:.0f}" cy="40" r="4" fill="#3fb950"/>')
+a(f'<text x="{W-PAD}" y="44" fill="{MUTED}" font-size="11" text-anchor="end">{updated}</text>')
 
 # Stats row
 colw = (W - 2 * PAD) / len(stats)
