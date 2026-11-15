@@ -28,6 +28,12 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 ### 📌 Featured projects
 
 <!-- PROJECTS:START -->
+<p align="center">
+  <a href="https://github.com/mafns/AI-Stock-Sentiment-Analyzer"><img src="assets/projects/AI-Stock-Sentiment-Analyzer.svg?v=fc867929" alt="AI-Stock-Sentiment-Analyzer" width="49%"/></a>
+  <a href="https://github.com/mafns/Airline-Demand-Forecasting-Revenue-Optimization-Simulator"><img src="assets/projects/Airline-Demand-Forecasting-Revenue-Optimization-Simulator.svg?v=fc13494c" alt="Airline-Demand-Forecasting-Revenue-Optimization-Simulator" width="49%"/></a>
+  <a href="https://github.com/mafns/Quickhire"><img src="assets/projects/Quickhire.svg?v=2b27db81" alt="Quickhire" width="49%"/></a>
+  <a href="https://github.com/mafns/Shein-Product-Funnel-Analysis-"><img src="assets/projects/Shein-Product-Funnel-Analysis-.svg?v=2b85b932" alt="Shein-Product-Funnel-Analysis-" width="49%"/></a>
+</p>
 <!-- PROJECTS:END -->
 
 ---
@@ -35,13 +41,13 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 ### 📊 GitHub activity
 
 <p align="center">
-  <img src="assets/activity.svg?v=1794729855" alt="GitHub activity" width="100%"/>
+  <img src="assets/activity.svg?v=1794730111" alt="GitHub activity" width="100%"/>
 </p>
 
 ---
 
 <p align="center">
-  <img src="games/pacman-contribution-graph-dark.svg?v=1794729855" alt="Pac-Man contribution graph" width="100%"/>
+  <img src="games/pacman-contribution-graph-dark.svg?v=1794730111" alt="Pac-Man contribution graph" width="100%"/>
 </p>
 
 ---
