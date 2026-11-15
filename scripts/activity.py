@@ -134,7 +134,7 @@ ncols = len(weeks)
 grid_w = ncols * STEP - GAP
 gx = (W - grid_w) / 2
 gy = 196
-H = gy + 7 * STEP + 126
+H = 270
 
 a(f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
   f'font-family="-apple-system,BlinkMacSystemFont,\'Segoe UI\',Helvetica,Arial,sans-serif">')
@@ -173,33 +173,6 @@ for i, (num, label, sub, col) in enumerate(stats):
     if i:
         x = PAD + colw * i
         a(f'<line x1="{x:.1f}" y1="80" x2="{x:.1f}" y2="148" stroke="{BORDER}"/>')
-
-# Heatmap month labels
-last_month = None
-for ci, w in enumerate(weeks):
-    d0 = dt.date.fromisoformat(w["contributionDays"][0]["date"])
-    if d0.month != last_month and ci < ncols - 2:
-        if last_month is not None or d0.day <= 7:
-            a(f'<text x="{gx + ci*STEP:.1f}" y="{gy-8}" fill="{MUTED}" font-size="10">{d0.strftime("%b")}</text>')
-        last_month = d0.month
-
-# Heatmap cells (fade in left to right)
-for ci, w in enumerate(weeks):
-    for x in w["contributionDays"]:
-        dd = dt.date.fromisoformat(x["date"])
-        row = (dd.weekday() + 1) % 7  # Sunday on top, like GitHub
-        lvl = LEVELS.get(x.get("contributionLevel", "NONE"), 0)
-        a(f'<rect class="c" style="animation-delay:{ci*0.012:.3f}s" x="{gx + ci*STEP:.1f}" y="{gy + row*STEP}" '
-          f'width="{CELL}" height="{CELL}" rx="2.5" fill="{HEAT[lvl]}"/>')
-
-# Legend for heatmap
-ly = gy + 7 * STEP + 14
-lx = gx + grid_w - 5 * STEP - 34
-a(f'<text x="{lx-6:.1f}" y="{ly+9}" fill="{MUTED}" font-size="10" text-anchor="end">Less</text>')
-for i, c in enumerate(HEAT):
-    a(f'<rect x="{lx + i*STEP:.1f}" y="{ly}" width="{CELL}" height="{CELL}" rx="2.5" fill="{c}"/>')
-a(f'<text x="{lx + 5*STEP + 2:.1f}" y="{ly+9}" fill="{MUTED}" font-size="10">More</text>')
-a(f'<text x="{gx:.1f}" y="{ly+9}" fill="{MUTED}" font-size="10">{total_year:,} contributions in the last year</text>')
 
 # Languages
 by = H - 60
