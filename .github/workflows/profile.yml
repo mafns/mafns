@@ -22,6 +22,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main                # latest main, not the (possibly older) triggering commit
 
       - uses: actions/setup-python@v5
         with:
@@ -53,5 +55,9 @@ jobs:
           sed -i -E "s#(assets/activity\.svg|games/pacman-contribution-graph-dark\.svg)(\?v=[0-9]+)?#\1?v=$V#g" README.md
           git add README.md
           git commit -m "chore: update profile stats"
-          git pull --rebase origin main
-          git push
+          # Another build may have pushed meanwhile; our files are newer, so keep them on conflict.
+          for i in 1 2 3 4 5; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            sleep $((i * 3))
+          done
+          exit 1
