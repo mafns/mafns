@@ -1,10 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=200&section=header&text=Affaan&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%"/>
-
-<!-- Typing line -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=620&lines=Hello+There;Taking+complicated+things+apart;Mostly+data%2C+not+precious+about+labels;If+there's+an+interesting+problem%2C+I'm+in" />
-</p>
-
+<p align="center"> <img src="assets/data-flow.svg?v=1" alt="Messy data flowing through a pipeline into a clean trend" width="100%"/> </p> <p align="center"> <img src="https://img.shields.io/badge/mostly-data-1f6feb?style=for-the-badge&labelColor=0d1117" alt="mostly data"/> <img src="https://img.shields.io/badge/curious_by-default-ff2e93?style=for-the-badge&labelColor=0d1117" alt="curious by default"/> <img src="https://img.shields.io/badge/labels-optional-00e5ff?style=for-the-badge&labelColor=0d1117" alt="labels optional"/> </p>
 ---
 
 ### 👋 About me
