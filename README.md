@@ -33,9 +33,3 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 </p>
 
 ---
-
-<p align="center">
-  <img src="games/pacman-contribution-graph-dark.svg?v=1795449728" alt="Pac-Man contribution graph" width="100%"/>
-</p>
-
----
