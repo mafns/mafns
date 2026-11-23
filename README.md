@@ -28,13 +28,13 @@ I'm not tied to one tool or one corner of the field. I go wherever the question 
 ### 📊 GitHub activity
 
 <p align="center">
-  <img src="assets/activity.svg?v=1795435066" alt="GitHub activity" width="100%"/>
+  <img src="assets/activity.svg?v=1795435127" alt="GitHub activity" width="100%"/>
 </p>
 
 ---
 
 <p align="center">
-  <img src="games/pacman-contribution-graph-dark.svg?v=1795435066" alt="Pac-Man contribution graph" width="100%"/>
+  <img src="games/pacman-contribution-graph-dark.svg?v=1795435127" alt="Pac-Man contribution graph" width="100%"/>
 </p>
 
 ---
