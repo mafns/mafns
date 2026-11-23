@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="Messy data flowing through a pipeline into a clean trend">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#0f1b33"/></linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f6feb" stop-opacity=".45"/><stop offset="1" stop-color="#1f6feb" stop-opacity="0"/></linearGradient>
+    <linearGradient id="fun" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1f6feb" stop-opacity=".02"/><stop offset="1" stop-color="#58a6ff" stop-opacity=".22"/></linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="frame"><rect width="1000" height="260" rx="14"/></clipPath>
+    <clipPath id="reveal"><rect x="590" y="0" width="360" height="260"><animate attributeName="width" values="0;360;360" keyTimes="0;.55;1" dur="6s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+  <style>
+    .dot { fill: var(--c); opacity: 0; animation: flow 6s cubic-bezier(.45,.05,.4,1) infinite; }
+    @keyframes flow {
+      0%   { transform: translate(0,0); opacity: 0; fill: var(--c); }
+      8%   { opacity: .9; }
+      40%  { transform: translate(var(--mx), var(--my)); fill: var(--c); opacity: .9; }
+      46%  { transform: translate(var(--mx), var(--my)); fill: #58a6ff; opacity: .9; }
+      80%  { transform: translate(var(--ex), var(--ey)); fill: #58a6ff; opacity: 1; }
+      94%  { transform: translate(var(--ex), var(--ey)); fill: #58a6ff; opacity: 1; }
+      100% { transform: translate(var(--ex), var(--ey)); fill: #58a6ff; opacity: 0; }
+    }
+    .gate { transform-box: fill-box; transform-origin: center; animation: pulse 1.6s ease-in-out infinite alternate; }
+    @keyframes pulse { from { opacity: .55; } to { opacity: 1; } }
+    .scan { animation: scan 1.6s linear infinite; }
+    @keyframes scan { from { transform: translateY(-46px); } to { transform: translateY(46px); } }
+    .drift { animation: drift 14s linear infinite; }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-40px); } }
+    .fade { animation: fade 6s ease-in-out infinite; }
+    @keyframes fade { 0%,40% { opacity: 0; } 70%,92% { opacity: 1; } 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .dot { opacity: .8; } }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="260" fill="url(#bg)"/>
+    <!-- faint dot grid -->
+    <g fill="#30363d" opacity=".6" class="drift">
+      <circle cx="0" cy="20" r="1"/><circle cx="0" cy="60" r="1"/><circle cx="0" cy="100" r="1"/><circle cx="0" cy="140" r="1"/><circle cx="0" cy="180" r="1"/><circle cx="0" cy="220" r="1"/><circle cx="40" cy="20" r="1"/><circle cx="40" cy="60" r="1"/><circle cx="40" cy="100" r="1"/><circle cx="40" cy="140" r="1"/><circle cx="40" cy="180" r="1"/><circle cx="40" cy="220" r="1"/><circle cx="80" cy="20" r="1"/><circle cx="80" cy="60" r="1"/><circle cx="80" cy="100" r="1"/><circle cx="80" cy="140" r="1"/><circle cx="80" cy="180" r="1"/><circle cx="80" cy="220" r="1"/><circle cx="120" cy="20" r="1"/><circle cx="120" cy="60" r="1"/><circle cx="120" cy="100" r="1"/><circle cx="120" cy="140" r="1"/><circle cx="120" cy="180" r="1"/><circle cx="120" cy="220" r="1"/><circle cx="160" cy="20" r="1"/><circle cx="160" cy="60" r="1"/><circle cx="160" cy="100" r="1"/><circle cx="160" cy="140" r="1"/><circle cx="160" cy="180" r="1"/><circle cx="160" cy="220" r="1"/><circle cx="200" cy="20" r="1"/><circle cx="200" cy="60" r="1"/><circle cx="200" cy="100" r="1"/><circle cx="200" cy="140" r="1"/><circle cx="200" cy="180" r="1"/><circle cx="200" cy="220" r="1"/><circle cx="240" cy="20" r="1"/><circle cx="240" cy="60" r="1"/><circle cx="240" cy="100" r="1"/><circle cx="240" cy="140" r="1"/><circle cx="240" cy="180" r="1"/><circle cx="240" cy="220" r="1"/><circle cx="280" cy="20" r="1"/><circle cx="280" cy="60" r="1"/><circle cx="280" cy="100" r="1"/><circle cx="280" cy="140" r="1"/><circle cx="280" cy="180" r="1"/><circle cx="280" cy="220" r="1"/><circle cx="320" cy="20" r="1"/><circle cx="320" cy="60" r="1"/><circle cx="320" cy="100" r="1"/><circle cx="320" cy="140" r="1"/><circle cx="320" cy="180" r="1"/><circle cx="320" cy="220" r="1"/><circle cx="360" cy="20" r="1"/><circle cx="360" cy="60" r="1"/><circle cx="360" cy="100" r="1"/><circle cx="360" cy="140" r="1"/><circle cx="360" cy="180" r="1"/><circle cx="360" cy="220" r="1"/><circle cx="400" cy="20" r="1"/><circle cx="400" cy="60" r="1"/><circle cx="400" cy="100" r="1"/><circle cx="400" cy="140" r="1"/><circle cx="400" cy="180" r="1"/><circle cx="400" cy="220" r="1"/><circle cx="440" cy="20" r="1"/><circle cx="440" cy="60" r="1"/><circle cx="440" cy="100" r="1"/><circle cx="440" cy="140" r="1"/><circle cx="440" cy="180" r="1"/><circle cx="440" cy="220" r="1"/><circle cx="480" cy="20" r="1"/><circle cx="480" cy="60" r="1"/><circle cx="480" cy="100" r="1"/><circle cx="480" cy="140" r="1"/><circle cx="480" cy="180" r="1"/><circle cx="480" cy="220" r="1"/><circle cx="520" cy="20" r="1"/><circle cx="520" cy="60" r="1"/><circle cx="520" cy="100" r="1"/><circle cx="520" cy="140" r="1"/><circle cx="520" cy="180" r="1"/><circle cx="520" cy="220" r="1"/><circle cx="560" cy="20" r="1"/><circle cx="560" cy="60" r="1"/><circle cx="560" cy="100" r="1"/><circle cx="560" cy="140" r="1"/><circle cx="560" cy="180" r="1"/><circle cx="560" cy="220" r="1"/><circle cx="600" cy="20" r="1"/><circle cx="600" cy="60" r="1"/><circle cx="600" cy="100" r="1"/><circle cx="600" cy="140" r="1"/><circle cx="600" cy="180" r="1"/><circle cx="600" cy="220" r="1"/><circle cx="640" cy="20" r="1"/><circle cx="640" cy="60" r="1"/><circle cx="640" cy="100" r="1"/><circle cx="640" cy="140" r="1"/><circle cx="640" cy="180" r="1"/><circle cx="640" cy="220" r="1"/><circle cx="680" cy="20" r="1"/><circle cx="680" cy="60" r="1"/><circle cx="680" cy="100" r="1"/><circle cx="680" cy="140" r="1"/><circle cx="680" cy="180" r="1"/><circle cx="680" cy="220" r="1"/><circle cx="720" cy="20" r="1"/><circle cx="720" cy="60" r="1"/><circle cx="720" cy="100" r="1"/><circle cx="720" cy="140" r="1"/><circle cx="720" cy="180" r="1"/><circle cx="720" cy="220" r="1"/><circle cx="760" cy="20" r="1"/><circle cx="760" cy="60" r="1"/><circle cx="760" cy="100" r="1"/><circle cx="760" cy="140" r="1"/><circle cx="760" cy="180" r="1"/><circle cx="760" cy="220" r="1"/><circle cx="800" cy="20" r="1"/><circle cx="800" cy="60" r="1"/><circle cx="800" cy="100" r="1"/><circle cx="800" cy="140" r="1"/><circle cx="800" cy="180" r="1"/><circle cx="800" cy="220" r="1"/><circle cx="840" cy="20" r="1"/><circle cx="840" cy="60" r="1"/><circle cx="840" cy="100" r="1"/><circle cx="840" cy="140" r="1"/><circle cx="840" cy="180" r="1"/><circle cx="840" cy="220" r="1"/><circle cx="880" cy="20" r="1"/><circle cx="880" cy="60" r="1"/><circle cx="880" cy="100" r="1"/><circle cx="880" cy="140" r="1"/><circle cx="880" cy="180" r="1"/><circle cx="880" cy="220" r="1"/><circle cx="920" cy="20" r="1"/><circle cx="920" cy="60" r="1"/><circle cx="920" cy="100" r="1"/><circle cx="920" cy="140" r="1"/><circle cx="920" cy="180" r="1"/><circle cx="920" cy="220" r="1"/><circle cx="960" cy="20" r="1"/><circle cx="960" cy="60" r="1"/><circle cx="960" cy="100" r="1"/><circle cx="960" cy="140" r="1"/><circle cx="960" cy="180" r="1"/><circle cx="960" cy="220" r="1"/><circle cx="1000" cy="20" r="1"/><circle cx="1000" cy="60" r="1"/><circle cx="1000" cy="100" r="1"/><circle cx="1000" cy="140" r="1"/><circle cx="1000" cy="180" r="1"/><circle cx="1000" cy="220" r="1"/><circle cx="1040" cy="20" r="1"/><circle cx="1040" cy="60" r="1"/><circle cx="1040" cy="100" r="1"/><circle cx="1040" cy="140" r="1"/><circle cx="1040" cy="180" r="1"/><circle cx="1040" cy="220" r="1"/>
+    </g>
+    <!-- funnel -->
+    <path d="M250 20 L380 112 L380 148 L250 240 Z" fill="url(#fun)" stroke="#1f6feb" stroke-opacity=".5"/>
+    <path d="M380 112 L440 112 M380 148 L440 148" stroke="#58a6ff" stroke-opacity=".6" stroke-width="2"/>
+    <!-- gate -->
+    <g class="gate" filter="url(#glow)">
+      <rect x="440" y="96" width="14" height="68" rx="7" fill="#58a6ff"/>
+    </g>
+    <rect x="360" y="112" width="80" height="36" fill="#58a6ff" opacity=".10"/>
+    <!-- chart -->
+    <g stroke="#30363d" stroke-width="1" opacity=".8"><line x1="600" y1="226" x2="944" y2="226"/><line x1="600" y1="186" x2="944" y2="186"/><line x1="600" y1="146" x2="944" y2="146"/><line x1="600" y1="106" x2="944" y2="106"/><line x1="600" y1="66" x2="944" y2="66"/><line x1="600" y1="26" x2="944" y2="26"/><line x1="600" y1="26" x2="600" y2="226"/><line x1="686" y1="26" x2="686" y2="226"/><line x1="772" y1="26" x2="772" y2="226"/><line x1="858" y1="26" x2="858" y2="226"/><line x1="944" y1="26" x2="944" y2="226"/></g>
+    <g clip-path="url(#reveal)">
+      <path d="M600,206.0 L610,203.0 L620,199.6 L630,196.0 L640,192.6 L650,189.4 L660,186.5 L670,183.9 L680,181.5 L690,179.5 L700,177.6 L710,175.8 L720,174.1 L730,172.3 L740,170.3 L750,168.0 L760,165.3 L770,162.3 L780,158.7 L790,154.7 L800,150.2 L810,145.4 L820,140.2 L830,134.8 L840,129.2 L850,123.7 L860,118.2 L870,113.0 L880,108.0 L890,103.4 L900,99.1 L910,95.2 L920,91.7 L930,88.5 L940,85.5 L940,226 L600,226 Z" fill="url(#area)"/>
+      <path d="M600,206.0 L610,203.0 L620,199.6 L630,196.0 L640,192.6 L650,189.4 L660,186.5 L670,183.9 L680,181.5 L690,179.5 L700,177.6 L710,175.8 L720,174.1 L730,172.3 L740,170.3 L750,168.0 L760,165.3 L770,162.3 L780,158.7 L790,154.7 L800,150.2 L810,145.4 L820,140.2 L830,134.8 L840,129.2 L850,123.7 L860,118.2 L870,113.0 L880,108.0 L890,103.4 L900,99.1 L910,95.2 L920,91.7 L930,88.5 L940,85.5" fill="none" stroke="#58a6ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    </g>
+    <!-- dots -->
+        <circle class="dot" cx="101" cy="57" r="2.5" style="--c:#8b949e;--mx:259px;--my:73px;--ex:718px;--ey:79px;animation-delay:-0.00s"/>
+    <circle class="dot" cx="230" cy="71" r="4" style="--c:#f0883e;--mx:130px;--my:54px;--ex:404px;--ey:123px;animation-delay:-0.13s"/>
+    <circle class="dot" cx="43" cy="144" r="4" style="--c:#ff7b72;--mx:317px;--my:-12px;--ex:874px;--ey:-49px;animation-delay:-0.26s"/>
+    <circle class="dot" cx="41" cy="72" r="2.5" style="--c:#f0883e;--mx:319px;--my:56px;--ex:748px;--ey:80px;animation-delay:-0.39s"/>
+    <circle class="dot" cx="156" cy="143" r="3.5" style="--c:#d29922;--mx:204px;--my:-11px;--ex:674px;--ey:-12px;animation-delay:-0.52s"/>
+    <circle class="dot" cx="51" cy="174" r="4" style="--c:#f0883e;--mx:309px;--my:-44px;--ex:740px;--ey:-19px;animation-delay:-0.65s"/>
+    <circle class="dot" cx="201" cy="123" r="3" style="--c:#d29922;--mx:159px;--my:2px;--ex:708px;--ey:-29px;animation-delay:-0.78s"/>
+    <circle class="dot" cx="48" cy="88" r="2.5" style="--c:#f0883e;--mx:312px;--my:41px;--ex:720px;--ey:73px;animation-delay:-0.91s"/>
+    <circle class="dot" cx="56" cy="113" r="2.5" style="--c:#ff7b72;--mx:304px;--my:17px;--ex:798px;--ey:5px;animation-delay:-1.04s"/>
+    <circle class="dot" cx="198" cy="145" r="4" style="--c:#f0883e;--mx:162px;--my:-11px;--ex:695px;--ey:-45px;animation-delay:-1.17s"/>
+    <circle class="dot" cx="158" cy="121" r="2.5" style="--c:#ff7b72;--mx:202px;--my:9px;--ex:724px;--ey:-9px;animation-delay:-1.30s"/>
+    <circle class="dot" cx="191" cy="90" r="3.5" style="--c:#bc8cff;--mx:169px;--my:39px;--ex:605px;--ey:64px;animation-delay:-1.43s"/>
+    <circle class="dot" cx="35" cy="122" r="3" style="--c:#8b949e;--mx:325px;--my:-1px;--ex:626px;--ey:60px;animation-delay:-1.57s"/>
+    <circle class="dot" cx="192" cy="109" r="3.5" style="--c:#bc8cff;--mx:168px;--my:15px;--ex:714px;--ey:-12px;animation-delay:-1.70s"/>
+    <circle class="dot" cx="224" cy="196" r="4" style="--c:#8b949e;--mx:136px;--my:-68px;--ex:665px;--ey:-95px;animation-delay:-1.83s"/>
+    <circle class="dot" cx="241" cy="57" r="3" style="--c:#bc8cff;--mx:119px;--my:67px;--ex:423px;--ey:125px;animation-delay:-1.96s"/>
+    <circle class="dot" cx="88" cy="27" r="2.5" style="--c:#d29922;--mx:272px;--my:104px;--ex:656px;--ey:141px;animation-delay:-2.09s"/>
+    <circle class="dot" cx="130" cy="207" r="4" style="--c:#bc8cff;--mx:230px;--my:-76px;--ex:788px;--ey:-113px;animation-delay:-2.22s"/>
+    <circle class="dot" cx="117" cy="126" r="3" style="--c:#bc8cff;--mx:243px;--my:14px;--ex:621px;--ey:42px;animation-delay:-2.35s"/>
+    <circle class="dot" cx="54" cy="151" r="2.5" style="--c:#8b949e;--mx:306px;--my:-20px;--ex:585px;--ey:42px;animation-delay:-2.48s"/>
+    <circle class="dot" cx="45" cy="69" r="3.5" style="--c:#f0883e;--mx:315px;--my:70px;--ex:684px;--ey:104px;animation-delay:-2.61s"/>
+    <circle class="dot" cx="134" cy="50" r="2.5" style="--c:#8b949e;--mx:226px;--my:80px;--ex:632px;--ey:118px;animation-delay:-2.74s"/>
+    <circle class="dot" cx="62" cy="182" r="2.5" style="--c:#f0883e;--mx:298px;--my:-48px;--ex:787px;--ey:-58px;animation-delay:-2.87s"/>
+    <circle class="dot" cx="75" cy="224" r="3.5" style="--c:#f0883e;--mx:285px;--my:-86px;--ex:650px;--ey:-49px;animation-delay:-3.00s"/>
+    <circle class="dot" cx="245" cy="206" r="3.5" style="--c:#d29922;--mx:115px;--my:-78px;--ex:589px;--ey:-76px;animation-delay:-3.13s"/>
+    <circle class="dot" cx="200" cy="137" r="3" style="--c:#d29922;--mx:160px;--my:-12px;--ex:662px;--ey:-21px;animation-delay:-3.26s"/>
+    <circle class="dot" cx="210" cy="180" r="2.5" style="--c:#ff7b72;--mx:150px;--my:-53px;--ex:470px;--ey:2px;animation-delay:-3.39s"/>
+    <circle class="dot" cx="204" cy="124" r="3.5" style="--c:#8b949e;--mx:156px;--my:3px;--ex:466px;--ey:61px;animation-delay:-3.52s"/>
+    <circle class="dot" cx="48" cy="47" r="2.5" style="--c:#f0883e;--mx:312px;--my:82px;--ex:712px;--ey:116px;animation-delay:-3.65s"/>
+    <circle class="dot" cx="135" cy="162" r="3" style="--c:#bc8cff;--mx:225px;--my:-29px;--ex:733px;--ey:-52px;animation-delay:-3.78s"/>
+    <circle class="dot" cx="135" cy="63" r="4" style="--c:#bc8cff;--mx:225px;--my:73px;--ex:730px;--ey:51px;animation-delay:-3.91s"/>
+    <circle class="dot" cx="118" cy="223" r="4" style="--c:#d29922;--mx:242px;--my:-100px;--ex:725px;--ey:-99px;animation-delay:-4.04s"/>
+    <circle class="dot" cx="207" cy="56" r="3" style="--c:#8b949e;--mx:153px;--my:77px;--ex:670px;--ey:58px;animation-delay:-4.17s"/>
+    <circle class="dot" cx="151" cy="53" r="3" style="--c:#f0883e;--mx:209px;--my:80px;--ex:460px;--ey:154px;animation-delay:-4.30s"/>
+    <circle class="dot" cx="125" cy="207" r="3" style="--c:#8b949e;--mx:235px;--my:-82px;--ex:752px;--ey:-101px;animation-delay:-4.43s"/>
+    <circle class="dot" cx="198" cy="94" r="4" style="--c:#8b949e;--mx:162px;--my:27px;--ex:587px;--ey:66px;animation-delay:-4.57s"/>
+    <circle class="dot" cx="176" cy="196" r="3" style="--c:#d29922;--mx:184px;--my:-58px;--ex:600px;--ey:-32px;animation-delay:-4.70s"/>
+    <circle class="dot" cx="145" cy="30" r="3" style="--c:#d29922;--mx:215px;--my:90px;--ex:605px;--ey:135px;animation-delay:-4.83s"/>
+    <circle class="dot" cx="61" cy="155" r="4" style="--c:#f0883e;--mx:299px;--my:-21px;--ex:584px;--ey:32px;animation-delay:-4.96s"/>
+    <circle class="dot" cx="203" cy="48" r="4" style="--c:#ff7b72;--mx:157px;--my:77px;--ex:587px;--ey:104px;animation-delay:-5.09s"/>
+    <circle class="dot" cx="154" cy="184" r="3" style="--c:#f0883e;--mx:206px;--my:-52px;--ex:752px;--ey:-88px;animation-delay:-5.22s"/>
+    <circle class="dot" cx="182" cy="120" r="3.5" style="--c:#f0883e;--mx:178px;--my:19px;--ex:599px;--ey:38px;animation-delay:-5.35s"/>
+    <circle class="dot" cx="233" cy="212" r="4" style="--c:#bc8cff;--mx:127px;--my:-83px;--ex:439px;--ey:-29px;animation-delay:-5.48s"/>
+    <circle class="dot" cx="100" cy="166" r="3" style="--c:#ff7b72;--mx:260px;--my:-40px;--ex:647px;--ey:0px;animation-delay:-5.61s"/>
+    <circle class="dot" cx="237" cy="160" r="3" style="--c:#bc8cff;--mx:123px;--my:-37px;--ex:489px;--ey:11px;animation-delay:-5.74s"/>
+    <circle class="dot" cx="194" cy="46" r="3" style="--c:#d29922;--mx:166px;--my:88px;--ex:702px;--ey:52px;animation-delay:-5.87s"/>
+    <!-- end marker -->
+    <g class="fade"><circle cx="940" cy="85.5" r="5" fill="#58a6ff" filter="url(#glow)"/><circle cx="940" cy="85.5" r="11" fill="none" stroke="#58a6ff" opacity=".5"/></g>
+  </g>
+</svg>
